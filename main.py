@@ -1,16 +1,6 @@
-from utils import get_process_data, min_edit_distance, get_translate_table, create_data_csv
+from utils import get_process_data, min_edit_distance, get_translate_table,\
+    create_data_csv
 from constants import *
-import csv
-
-
-products = [
-    "supurge", "elektrikli supurge", "çay makınası", "kulaklık", "Telefon",
-    "kablosuz kulaklık", "bebek arabası", "oyuncu laptop", "gaming bilgisayar",
-    "Akilli telefon", "Süoürge",  "dizüstü bilgisayar", "telfon",
-    "Çay Makinesi", "süpürge", "oyuncu monitor", "televizyon", "akıllı tv",
-    "kulakiçi kulaklık", "bebek maması", "bebk bezi", "oyuncu klavye",
-    "kedi maması"
-]
 
 
 def main():
@@ -29,3 +19,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+print(CATEGORIES)

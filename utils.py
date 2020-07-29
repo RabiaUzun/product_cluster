@@ -1,5 +1,15 @@
 import numpy as np
 import re
+import csv
+
+products = [
+    "supurge", "elektrikli supurge", "çay makınası", "kulaklık", "Telefon",
+    "kablosuz kulaklık", "bebek arabası", "oyuncu laptop", "gaming bilgisayar",
+    "Akilli telefon", "Süoürge",  "dizüstü bilgisayar", "telfon",
+    "Çay Makinesi", "süpürge", "oyuncu monitor", "televizyon", "akıllı tv",
+    "kulakiçi kulaklık", "bebek maması", "bebk bezi", "oyuncu klavye",
+    "kedi maması"
+]
 
 
 def create_data_csv():

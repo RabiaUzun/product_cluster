@@ -18,4 +18,4 @@ Clone the repository and create a virtual environment.
 
 ### **Run**
 
-`$ python prepare_data_file.py`
+`$ python main.py`
