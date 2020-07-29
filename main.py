@@ -1,4 +1,4 @@
-from utils import get_process_data, min_edit_distance, get_translate_table
+from utils import get_process_data, min_edit_distance, get_translate_table, create_data_csv
 from constants import *
 import csv
 
@@ -11,16 +11,6 @@ products = [
     "kulakiçi kulaklık", "bebek maması", "bebk bezi", "oyuncu klavye",
     "kedi maması"
 ]
-
-
-def create_data_csv():
-    """
-    Create a csv file for products with ids.
-    """
-    ids = enumerate(products, 1)
-    with open("data.csv", "w", newline='') as f:
-        writer = csv.writer(f)
-        writer.writerows(list(ids))
 
 
 def main():

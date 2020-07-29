@@ -2,6 +2,16 @@ import numpy as np
 import re
 
 
+def create_data_csv():
+    """
+    Create a csv file for products with ids.
+    """
+    ids = enumerate(products, 1)
+    with open("data.csv", "w", newline='', encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerows(list(ids))
+
+
 def get_translate_table(from_letters, to_letters):
     """
     Override str object to convert turkish letters to english letters
